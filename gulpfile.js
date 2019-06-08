@@ -9,7 +9,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
-var uglify = require('gulp-uglify');
+var uglify = require('gulp-uglify-es').default;
 var rename = require("gulp-rename");
 var wait = require("gulp-wait");
 var dirSync = require("gulp-directory-sync");
@@ -30,7 +30,6 @@ var localDir = "http://localhost/Zillla/";
 var altDir = "C:/xampp/htdocs/Zillla/";
 var srcDir = "./src/";
 var buildDir = "./build/";
-
 
 
 // -- UTIL -- //
@@ -81,6 +80,7 @@ gulp.task('make-sstyles', function () {
     runSequence('base-dev',
         'make-rest');
 });
+
 //Compile JS, make-js --> build
 gulp.task('make-js', function () {
 

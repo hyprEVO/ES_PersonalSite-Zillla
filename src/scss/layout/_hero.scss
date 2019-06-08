@@ -6,6 +6,13 @@
 
 .hero-paragraph {
     margin-bottom: 32px;
+   a{
+       color:white;
+       text-decoration: none;
+       &:hover{
+           text-decoration: underline;
+       }
+   }
 }
 
 .hero-browser {
