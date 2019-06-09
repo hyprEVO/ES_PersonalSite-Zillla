@@ -12,7 +12,10 @@ body {
   background: color(bg, 1); /* Fallback for when there is no custom background color defined. */
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-
+  background-color: #0f0f0f;
+  background: url("../img/body-bg.jpg") no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
 }
 
 hr {
