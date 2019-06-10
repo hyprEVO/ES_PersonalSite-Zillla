@@ -81,9 +81,24 @@
 }
 
 .social-feature {
+  .hero-title {
+    margin-bottom: 55px;
+  }
   i {
     margin-right: 15px;
     color: #92a2b1;
+    &.fa-facebook-square {
+      color: #3b5998;
+    }
+    &.fa-twitch {
+      color: #6441a5;
+    }
+    &.fa-twitter {
+      color: #1da1f2;
+    }
+    &.fa-youtube-play {
+      color: #c4302b;
+    }
   }
   p {
     max-width: 300px;
@@ -104,6 +119,9 @@
   }
   @media all and (max-width: 815px) {
     padding: 20px;
+    .hero-title {
+      margin: 20px 0;
+    }
   }
 }
 
@@ -129,12 +147,28 @@
       font-size: 17px;
       i {
         color: #92a2b1;
-         @include transition(all 150ms ease-in-out);
+        @include transition(all 150ms ease-in-out);
         &:hover {
-           @include transition(all 150ms ease-in-out);
+          @include transition(all 150ms ease-in-out);
           color: white;
         }
       }
     }
   }
+}
+
+@media all and (max-width: 815px) {
+  h1.hero-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .brand img {
+    max-width: 80px;
+    margin: 0 auto;
+  }
+
+  .site-header {
+    padding: 0;
+  }
+
 }
